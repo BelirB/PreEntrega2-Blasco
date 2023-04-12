@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+
+                                                                    /*HEADER*/
+
+p {
+
+font-family: 'Times New Roman', Times, serif;
+text-align: justify;
+}
+
+/*sacar subrayado*/
+a {
+text-decoration: none;
+
+}
+
+
+/*prueba de color del nav en todos los HTML*/
+.nav-linkk { 
+    color:rgb(250, 250, 250);
+    margin: 30px;
+}
+
+
+
+
+
+
+                                                                    /*MAIN*/
+
+/*Color del main del index*/
+.Quees{
+
+    background-color: #191919;
+    padding: 30px 100px;
+    border: 5px rgb(170, 116, 15) solid;
+    border-radius: 10px;
+}
+.Qlost {
+    color: aliceblue;
+}
+
+
+   
+
+/*Fin de color del main index*/
+
+.lostarkportada {
+    background-image: url("../multimedia/Lost\ Ark\ Portada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 50vh;
+}
+
+.lostarkportada p {
+
+    color: azure;
+}
+
+
+
+      /*Titulo CLASE*/
+
+      .titulo__main{
+        text-align: center;
+        font-size: 50px;
+        padding-top: 15px;
+        color: #eee;
+      }
+
+      /*MAIN DEL HTML CLASES*/
+
+ /*Main de clases*/
+ .main__clases{
+  background-color: #191919;
+  
+}
+
+
+
+
+
+    /*CARDS*/
+
+    .cards{
+      display: flex;
+      padding: 20px 0;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      align-items: center;
+      height: 100%;
+      gap: 20px;
+    }
+
+    .card{
+      width: 15%;
+      background-color: #1a1717;
+      border: 2px solid black;
+    }
+    
+    .card img{
+      width: 100%;
+      height: 325px;
+      object-fit: cover;
+    }
+    
+    .classes__body{
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .classes__body h3{
+      text-decoration: none;
+      font-size: 30px;
+      background-color: #aa740f;
+      color: #eee;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .classes__body h4{
+      font-size: 18px;
+      color: #eee;
+    }
+    
+    .classes__body p{
+      font-size: 15px;
+      color: #eee;
+    }
+
+    .lostarkVideo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lostarkVideo iframe{
+      margin: 15px;
+    }
+
+      /*Main Noticias*/
+
+      .grilla{
+        background-color: rgb(20, 24, 24);
+        padding: 10px;
+        display: grid;
+        grid-template-areas: 
+        "area1 area2 area2 area3 area3" 
+        "area1 area4 area4 area4 area4"
+        "area5 area5 area5 area6 area6"
+        ;
+        gap: 5px;
+      }
+
+      .caja{
+        width: 100%;
+        height: 100%; 
+        background-color: #eee;
+      }
+
+      .c1{
+        grid-area: area1;
+        background-color: #0f0d0d;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .c2{
+        grid-area: area2;
+        background-color: #0f0d0d;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .c3{
+        grid-area: area3;
+        background-color: #0f0d0d;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .c4{
+        grid-area: area4;
+        background-color: #0f0d0d;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .c5{
+        grid-area: area5;
+        background-color: #0f0d0d;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .c6{
+        grid-area: area6;
+        background-color: #0f0d0d;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .caja img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .caja__content{
+        padding: 10px;
+        text-align: center;
+      }
+
+      .caja__content h2{
+        background-color: #aa740f;
+        border-radius: 5px;
+        color: #eee;
+        
+      }
+
+      .caja__content p{
+        text-align: center;
+        padding-top: 15px;
+        color: #eee;
+      }
+
+      .main__news{
+        background-color: #191919;
+        
+      }
+      .news h1{
+        text-align: center;
+        color: #eee;
+        margin: 0;
+        font-size: 50px;
+        padding-top: 15px;
+        
+      }
+
+
+
+
+
+                                                                   /*FOOTER*/
+
+.navv {
+    background-color: #0a0606ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+         /*MEDIDAS*/
+
+         @media screen and (max-width: 1300px) {
+
+          .classes__body h3{
+            font-size: 1.2rem;
+          }
+          .classes__body p{
+            font-size: 0.8rem;
+          }
+          .card{
+            width: 20%;
+           
+          }
+         }
+
+        @media screen and (max-width: 900px) {
+
+         .classes__body h3{
+           font-size: 1.2rem;
+         }
+         .classes__body p{
+           font-size: 0.8rem;
+         }
+         .card{
+           width: 40%;
+         }
+         .caja__content h2{
+          font-size: 1.0rem;
+        }
+        .caja__content p{
+          font-size: 0.7rem;
+        }
+        .nav-linkk{
+          font-size: 0.8rem;
+        }
+        .news h1{
+          font-size: 2.0rem;
+        }
+
+        }
+
+        @media screen and (max-width: 500px) {
+
+          .classes__body h3{
+            font-size: .9rem;
+          }
+          .classes__body p{
+            font-size: .7rem;
+          }
+          .card{
+            width: 60%;
+          }
+          .caja__content h2{
+            font-size: 1.0rem;
+          }
+          .grilla{
+            grid-template-areas: 
+            "area1 area2"
+            "area3 area4"
+            "area5 area6";
+            width: 100vw;
+          }
+          .c1{
+            grid-area: area1;
+          }
+          .c2{
+            grid-area: area2;
+          }
+          .c3{
+            grid-area: area3;
+          }
+          .c4{
+            grid-area: area4;
+          }
+          .c5{
+            grid-area: area5;
+          }
+          .c6{
+            grid-area: area6;
+          }
+          .nav-linkk{
+            font-size: 0.8rem;
+            margin: 8px;
+          }
+          .navv{
+            flex-direction: column;
+          }
+          .news h1{
+            font-size: 1.5rem;
+          }
+        }
+
+
+
+
+
+
+
+        
+          
+         
+
+
+
+
+
+
